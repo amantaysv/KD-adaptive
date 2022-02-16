@@ -74,3 +74,15 @@ DG.then(function () {
     });
     DG.marker([42.879047, 74.595386]).addTo(map);
 });
+
+
+const burger = document.querySelector("#burger")
+const navbar = document.querySelector('.navbar-navs')
+const overlay = document.querySelector('.overlay')
+
+burger.addEventListener('click', () => {
+  navbar.classList.toggle('active')
+  burger.classList.toggle('active')
+  overlay.classList.toggle('active')
+  document.body.classList.toggle('overflow-hidden')
+})
